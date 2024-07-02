@@ -1,0 +1,199 @@
+/* ====nav==== */
+@media screen and (max-width:2000px){
+    .nav-line{
+        display: none;
+    }
+}
+@media screen and (max-width:1200px){
+    .nav-icon{
+        display: none;
+    }
+}
+@media screen and (max-width:992px){
+    .nav-line{
+        display:block;
+    }
+}
+@media screen and (max-width:576px){
+    .nav-line{
+        display: none;
+    }
+}
+
+/* ====home==== */
+@media screen and (max-width:992px){
+    .layer h1{
+        font-size: 70px;
+    }
+    .layer h4{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .slider{
+        display: none;
+    }
+
+
+.layer h1{
+        font-size: 50px;
+    }
+    .layer h4{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:576px){
+    .layer h1{
+        font-size: 45px;
+    }
+    .layer h4{
+        font-size: 8px;
+    }
+}
+/* ====who=== */
+@media screen and (max-width:768px){
+    .who p{
+        width: 100%;
+    }
+}
+@media screen and (max-width:992px){
+    .who p{
+        width: 100%;
+    }
+}
+/* ====team==== */
+@media screen and (max-width:1400px){
+    .team .container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .team .container .row .col-md-3{
+        margin-bottom: 50px;
+        width: 50%;
+    }
+
+}
+@media screen and (max-width:992px){
+    .team .container .row .col-md-3{
+        width: 50%;
+    }
+}
+@media screen and (max-width:768px){
+    .team .container .row .col-md-3{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:576px){
+    .team .container .row .col-md-3{
+        width: 100%;
+    }
+
+}
+
+/* ====service==== */
+@media screen and (max-width:1200px){
+    .service .container .row .col-md-3{
+        width: 50%;
+    }
+}
+
+
+
+@media screen and (max-width:992px){
+    .service .container .row .col-md-2{
+        width: 33%;
+        padding: 50px;
+    }
+    .service .container .row .col-md-6{
+        width: 100%;
+        text-align: center;
+    }
+    .p-service{
+        text-align: center;
+        width: 100%;
+    }
+    .service .container .row .col-md-3{
+        width: 50%;
+    }
+    .w-letter{
+        position: absolute;
+        left: 32%;
+    }
+}
+@media screen and (max-width:768px){
+    .service .container .row .col-md-2{
+        width: 50%;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:576px){
+    .service .container .row .col-md-3{
+        width: 100%;
+        padding-bottom:20px ;
+    }
+    .service .container .row .col-md-2{
+        width: 100%;
+        padding: 20px;
+    }
+}
+/* ====price==== */
+@media screen and (max-width:1400px){
+    .price .col-md-3 .l-card{
+        width: 100%;
+        margin-top:0% ;
+        margin-right:0% ;
+        padding: 0%;
+    }
+    .price .col-md-3{
+        width: 50%;
+    }
+}
+@media screen and (max-width:1200px){
+    .price .col-md-3{
+        width: 50%;
+        margin: 0%;
+    }
+    }
+    @media screen and (max-width:768px){
+        .price .col-md-3{
+            width: 100%;
+        }
+        .price .col-md-3{
+            width: 100%;
+            margin-top:0% ;
+            margin-right:0 ;
+            padding: 0%;
+            margin-left: 0%;
+        }
+        .price .col-md-3 .card4{
+            margin: 0%;
+        }
+    }
+    /* ====contant==== */
+    @media screen and (max-width:992px){
+        .contact .row .col{
+            width: 100%;
+        }
+    }
+
+
+    /* ====carsoul=== */
+    @media screen and (max-width:768px){
+        .test .carousel-control-prev {
+            display: none;
+        }
+        .carousel-control-next    {        
+            display: none;
+        }
+
+        .testimonial p{
+            width: 100%;
+        }
+
+
+    }

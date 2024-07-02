@@ -1,0 +1,579 @@
+/* ====global==== */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.text-site{
+    color: #00c3da;
+}
+.h-100vh{
+    height: 100vh;
+} 
+
+
+
+/* ====navbar==== */
+
+.nav-item a{
+    font-size: 13px;
+}
+.nav-border::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100px;
+    top: -46px;
+    background-color: gainsboro;
+}
+nav>.container>a>img{
+    width:45% ;
+    margin-bottom:10px ;
+}
+nav{
+    border-top:transparent;
+}
+.nav-border a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.nav-border a:hover {
+color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-toggler{
+    border: transparent;
+
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+
+.nav-line{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100px;
+    top: -24px;
+    background-color: gainsboro;
+}
+/* ====home==== */
+.head  .carousel-indicators button{
+    background-color: transparent !important;
+    width: 100%;
+    border: transparent !important;
+
+}
+
+
+
+
+
+.head .slide .carousel-indicators button:before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255);
+    position: relative;
+    right:-1000%;
+    bottom: 30%;
+    margin: auto;
+
+}
+.head  .slide{
+    position: absolute;
+    left: 0;
+    top: 40%;
+    margin-top: 0px;
+}
+.head .slide button{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-left: 0;
+    color: white;
+}
+.head .slide>button>i{
+    z-index: 2;
+}
+.head .slide>button:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 50px;
+    width: 0;
+    background-color: #fff;
+    z-index: 0;
+    transition: 0.3s;
+}
+.head .slide>button:hover:before {
+    width: 50px;
+    color: black;
+}
+.head .slide>button:hover i{
+    color: black;
+}
+
+.layer{
+    position: absolute;
+    top: 0;
+    display: table;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(31, 31, 31, 0.55);
+    color: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.layer h1{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.layer h4 {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.head .btn1 button{
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 30px;
+    height: 50px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    background-color: #00c3da;
+    border: 0%;
+    border-color: transparent;
+}
+.head .btn2 button{
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 30px;
+    height: 50px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid white;
+    
+}
+.btn2:hover button{
+    background-color:white;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.btn1:hover button{
+    background-color:#1fdaef;
+}
+
+/* ====who==== */
+.who-btn{
+    border-color: gainsboro;
+}
+
+.who p{
+    width: 50%;
+}
+
+
+
+
+
+.who span::after{
+    content:" |" ;
+    animation-name: typing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    color: #00c3da;
+}
+@keyframes typing{
+    4%{ content: "s ";}
+    10%{ content: "so ";}
+    14%{ content: "sof ";}    
+    19%{ content: "soft ";}
+    23%{ content: "softw ";}
+    27%{ content: "softwa ";}
+    31%{ content: "softwar ";}
+    35%{ content: "software ";}
+    40%{ content: "softwar ";}
+    45%{ content: "softwa ";}
+    49%{ content: "softw ";}
+    53%{ content: "soft ";}
+    57%{ content: "sof ";}
+    61%{ content: "so ";}
+    65%{ content: "s ";}
+    70%{ content: "a ";}
+    74%{ content: "ap ";}
+    78%{ content: "app ";}
+    82%{ content: "apps ";}
+    87%{ content: "app ";}
+    91%{ content: "ap ";}
+    96%{ content: "a ";}
+    100%{ content: " ";}
+}
+
+/* ====team==== */
+.team h2{
+font-family: 'Poppins', sans-serif;
+font-size: 40px;
+font-weight: 700;
+}
+.c-letter{
+    position: absolute;
+    opacity: 0.1;
+    top: -10%;
+    left: 48%;
+}
+.c-letter h2{
+    font-size: 100px;
+}
+
+.team-hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:#00c3da;
+    top: 10%;
+    opacity: 0;
+    transition: 0.5s;
+}
+.team-hover:hover{
+    position: absolute;
+    top: 0;
+    opacity: 0.9;
+}
+.teams-hover-icons i{
+    font-size: 13px;
+    color: white;
+}
+
+.teams-hover-icons i:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+}
+
+
+.teams-hover-content{
+    width: fit-content;
+    margin-top: auto;
+    margin-right: auto;
+    text-align: start;
+    padding-left:20px ;
+}
+
+.teams-hover-content p{
+    font-size: 13px;
+
+}
+.teams-hover-content h6{
+    width: 100%;
+    font-size: 13px;
+    padding-right:10px;
+    margin-bottom: 0px;
+}
+
+/* ====service==== */
+.service{
+    background-color:rgb(98, 98, 98) ;
+}
+.service h6{
+    font-size: 13px;
+    font-weight: bold;
+}
+.service h2{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 37px;
+    font-weight: 700;
+}
+.service-list{
+    list-style: none;
+    color: white;
+}
+.service-icon i{
+    font-size: 8px;
+    font-weight: bold;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    
+}
+.service-icon{
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    position: relative;
+    top: 4px;
+}
+.w-letter{
+    position: absolute;
+    opacity: 0.1;
+    top: 1%;
+    left: 0%;
+}
+.w-letter h2{
+    font-size: 80px;
+}
+.p-service{
+    color: white;
+    width: 75%;
+}
+/* ====price==== */
+.price h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    }
+.c2-letter{
+        position: absolute;
+        opacity: 0.1;
+        top: -7%;
+        left: 48%;
+    }
+.c2-letter h2{
+        font-size: 100px;
+    }
+.price{
+        background-color: #f7f7f7;
+    }
+
+.card{
+        border: 0;
+        width: 100%;
+    }
+.card-head h3{
+        font-size: 55px;
+        font-family: 'Poppins', sans-serif;
+    }
+.card-head span{
+        font-size: 20px;
+    }
+.card-head p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+.card-body button{
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0 16px;
+    font-size: 12px;
+    height: 40px;
+    line-height: 40px;
+}
+.l-btn button{
+    padding: 10px 20px;
+    line-height: 30px;
+    height: 45px;
+}
+
+
+.l-card{
+    width: 270px;
+    margin-top:30px ;
+    margin-right:200px ;
+}
+.badge{
+    padding: 0%;
+     margin-bottom: 5%;
+}
+
+.l-card p {
+    font-size: 16px;
+}
+
+
+
+.badge p {
+    font-weight: 500;
+    color: white;
+    font-size: 10px;
+    background-color: #00c3da;
+    padding: 8px 13px ;
+    border-radius:20px ;
+    
+}
+/* <!-- ====Carousel==== --> */
+.test{
+ background-color:#f7f7f7;
+ height: 100%;
+}
+
+
+.testimonial
+{
+    background-color: #ffff;
+    padding: 75px 100px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    max-width: 750px;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+.testimonial h4
+{
+    font-family: 'Poppins', sans-serif;
+    color: #1f1f1f;
+    line-height: 1.3;
+    margin-bottom: 10px;
+    font-size: 24px;
+    letter-spacing: -0.03em;
+ 
+}
+
+.test .carousel-item img
+{ 
+   width: 90px;
+   border-radius: 50%;
+   transform: translateY(50%);
+   
+
+}
+
+.test .carousel-indicators button {
+    width: 10px ;
+    height: 10px ;
+    border: 2px transparent !important;
+    border-radius: 50% !important;
+    margin-top:30px ;
+    background-color: #787878;
+
+}
+
+.test .carousel-indicators button.active {
+    width: 10px;
+    height: 10px ;
+    border: 2px transparent !important;
+    border-radius: 50% !important;
+    background-color:#00c3da;
+    
+}
+.test .carousel-control-prev
+{
+    color: #1f1f1f ;
+}
+.test .carousel-control-next
+{
+    color: #1f1f1f ;
+}
+.test .arrow
+{
+   font-size: 30px;
+}
+
+.test i:hover
+{
+    color: #00c3da;
+}
+.test .title-head h6 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    margin-top: 0;
+}
+.test .testimonial span 
+{
+   
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+       padding-top: 20px;
+       padding-bottom: 20px;
+    letter-spacing: 0.05em;
+   
+}
+.test .testimonial p{
+    margin: 25px 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+/* .carousel-control-next, .carousel-control-prev {
+
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 0;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+} */
+
+/* ====contact==== */
+.contact{
+    box-sizing: border-box;
+}
+iframe{
+    height: 130vh;
+    width: 100%;
+}
+.form-control {
+    width: 78%;
+    height: 50px;
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 50px;
+    border: 2px solid #eee;
+    border-radius: 0;
+}
+textarea.form-control {
+    resize: none;
+    min-height: 110px;
+    line-height: inherit;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.inputs{
+    padding-top:150px ;
+    margin-left: 50px;
+}
+.contact h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+}
+.G-letter{
+    position: absolute;
+    opacity: 0.1;
+    top: -75%;
+    left: 0%;
+}
+.G-letter h2{
+    font-size: 70px;
+}
+label{
+    font-size: 15px;
+padding-bottom: 5px;
+}
+.contact p{
+    font-size: 18px;
+}
+.btn-contact{
+    color: #fff;
+    background-color: #00c3da;
+    position: relative;
+    padding: 0 25px;
+    height: 50px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
